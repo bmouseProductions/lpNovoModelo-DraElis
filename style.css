@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Aventa";
+  src: url("./Font/aventa/Aventa-LightItallicPERSONALUSEONLY.otf");
+}
+
+@font-face {
+  font-family: "woman";
+  src: url("./Font/woman/BeautyDisplayRegular.ttf");
+}
+
+.aventa {
+  font-family: "Aventa";
+}
+
+.woman {
+  font-family: "woman";
+}
+
+#header {
+  background-image: url("assets/header.png"); /* Imagem para desktop */
+}
+
+@media (max-width: 768px) {
+  #header {
+    background-image: url("assets/header-mobile.svg"); /* Imagem para mobile */
+  }
+}
