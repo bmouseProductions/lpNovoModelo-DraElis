@@ -1,420 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/3b9ff962e8.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-  <link rel="stylesheet" href="style.css">
-  <title>Header Layout</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3b9ff962e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Header Layout</title>
 
-  <style>
-    .scrolling-wrapper {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-    }
-
-    .scrolling-text {
-      display: flex;
-      align-items: center; /* Centraliza textos e imagens verticalmente */
-      animation: scroll-left 15s linear infinite;
-    }
-
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0%);
+    <style>
+      .scrolling-wrapper {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
       }
-      100% {
-        transform: translateX(-50%);
+
+      .scrolling-text {
+        display: flex;
+        align-items: center; /* Centraliza textos e imagens verticalmente */
+        animation: scroll-left 15s linear infinite;
       }
-    }
 
-    .scrolling-text span,
-    .scrolling-text img {
-      white-space: nowrap;
-      margin-right: 50px; /* Espaço entre os itens */
-    }
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
 
-    .scrolling-text img {
-      height: 50px; /* Ajuste o tamanho conforme necessário */
-      object-fit: contain;
-    }
-  </style>
+      .scrolling-text span,
+      .scrolling-text img {
+        white-space: nowrap;
+        margin-right: 50px; /* Espaço entre os itens */
+      }
 
-</head>
-<body>
-  <header class="relative bg-cover lg:bg-center h-screen" id="header">
-    <nav class="container mx-auto flex pt-24 justify-between h-full px-6">
-      <div class="text-white text-2xl font-bold lg:block hidden">
-        <a href="#">
-            <img src="assets/logo.svg" alt="">
-        </a>
-      </div>
-
-      <div class="text-white text-lg font-semibold">
-        <a href="#contato" class="hover:text-gray-300 aventa border border-white rounded-full p-3">Contato</a>
-      </div>
-
-      <div class="flex space-x-4 text-white">
-        <a href="https://instagram.com" target="_blank" class="hover:text-gray-300">
-          <i class="fab fa-instagram text-2xl"></i>
-        </a>
-        <a href="https://wa.me/5511999999999" target="_blank" class="hover:text-gray-300">
-          <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="bg-[#A680DB] py-12">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-6 px-4">
-      <div class="lg:hidden">
-        <img src="assets/estrela-header.png" class="mx-auto lg:hidden" alt="">
-      </div>
-      <!-- Texto -->
-      <div class="space-y-6 text-white lg:pl-12">
-        <h1 class="text-4xl font-bold text-center lg:text-left">
-          CUIDAR PARA <br>
-          <span class="italic aventa text-[#383690] lg:text-white">TRANSFORMAR VIDAS </span>DESDE <br>
-          <span class="text-gray-100">O INÍCIO.</span>
-        </h1>
-        <p class="text-center lg:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed 
-          odio aliquam ultrices. Cras quis mollis elit, eget facilisis diam. Aliquam 
-          ullamcorper porta accumsan.
-        </p>
-        <p class="text-center lg:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed 
-          odio aliquam ultrices. Cras quis mollis elit, eget facilisis diam. Aliquam 
-          ullamcorper porta accumsan.
-        </p>
-        <button class="flex lg:block mx-auto lg:mx-0 rounded-full px-6 py-3 bg-purple-700 text-white font-semibold lg:rounded hover:bg-purple-800">
-          SAIBA MAIS AQUI
-        </button>
-      </div>
-  
-      <div class=" lg:justify-end lg:hidden">
-        <img src="assets/dra-mobile.png" alt="Foto" class="">
-      </div>
-
-      <!-- Imagem -->
-      <div class="relative lg:flex justify-center lg:justify-end hidden ">
-        <img src="assets/dra.png" alt="Foto" class="rounded-md shadow-lg max-w-full ">
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Seção de Serviços -->
-  <section class="bg-purple-800 py-12">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-white">
-      <!-- Serviço 1 -->
-      <div>
-        <div class="text-4xl mb-4"><img src="assets/alergia.svg" class="mx-auto" alt=""></div>
-        <h3 class="text-xl font-semibold">Alergias</h3>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
-          sit amet, adipiscing elit.
-        </p>
-      </div>
-
-      <!-- Serviço 2 -->
-      <div>
-        <div class="text-4xl mb-4"><img src="assets/imunologia.svg" class="mx-auto" alt=""></div>
-        <h3 class="text-xl font-semibold">Imunologia</h3>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
-          sit amet, adipiscing elit.
-        </p>
-      </div>
-
-      <!-- Serviço 3 -->
-      <div>
-        <div class="text-4xl mb-4"><img src="assets/pediatria.svg" class="mx-auto" alt=""></div>
-        <h3 class="text-xl font-semibold">Pediatria</h3>
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
-          sit amet, adipiscing elit.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-[#FFD8E2] py-12">
-    <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
-      <!-- Texto -->
-      <div class="lg:hidden">
-        <img src="assets/estrela-roxa.png" class="mx-auto lg:hidden" alt="">
-      </div>
-      <div class="text-[#7C3D9E] space-y-6">
-        <h2 class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#7C3D9E] lg:text-4xl text-center lg:text-left leading-snug">
-          ALERGISTA, <br>
-          IMUNOLOGISTA & <br>
-          PEDIATRA
-        </h2>
-        <div class="relative flex justify-center lg:hidden">
-          <img src="assets/dra2.png" alt="Foto da Doutora" class="rounded-lg  max-w-full">
+      .scrolling-text img {
+        height: 50px; /* Ajuste o tamanho conforme necessário */
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="relative bg-cover lg:bg-center h-screen" id="header">
+      <nav class="container mx-auto flex pt-24 justify-between h-full px-6">
+        <div class="text-white text-2xl font-bold lg:block hidden">
+          <a href="#">
+            <img src="assets/logo.svg" alt="" />
+          </a>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed 
-          odio aliquam ultrices. Cras quis mollis elit, eget facilisis diam. Aliquam 
-          ullamcorper porta accumsan.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed 
-          odio aliquam ultrices. Cras quis mollis elit, eget facilisis diam. Aliquam 
-          ullamcorper porta accumsan.
-        </p>
-        <button class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded hover:bg-[#7C3D9E]">
-          SAIBA MAIS AQUI
-        </button>
+
+        <div class="text-white text-lg font-semibold">
+          <a
+            href="#contato"
+            class="hover:text-gray-300 aventa border border-white rounded-full p-3"
+            >Contato</a
+          >
+        </div>
+
+        <div class="flex space-x-4 text-white">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="hover:text-gray-300"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a
+            href="https://wa.me/5511999999999"
+            target="_blank"
+            class="hover:text-gray-300"
+          >
+            <i class="fab fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-[#A680DB] py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-6 px-4"
+      >
+        <div class="lg:hidden">
+          <img
+            src="assets/estrela-header.png"
+            class="mx-auto lg:hidden"
+            alt=""
+          />
+        </div>
+        <!-- Texto -->
+        <div class="space-y-6 text-white lg:pl-12">
+          <h1 class="text-4xl font-bold text-center lg:text-left">
+            CUIDAR PARA <br />
+            <span class="italic aventa text-[#383690] lg:text-white"
+              >TRANSFORMAR VIDAS </span
+            >DESDE <br />
+            <span class="text-gray-100">O INÍCIO.</span>
+          </h1>
+          <p class="text-center lg:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <p class="text-center lg:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <button
+            class="flex lg:block mx-auto lg:mx-0 rounded-full px-6 py-3 bg-purple-700 text-white font-semibold lg:rounded hover:bg-purple-800"
+          >
+            SAIBA MAIS AQUI
+          </button>
+        </div>
+
+        <div class="lg:justify-end lg:hidden">
+          <img src="assets/dra-mobile.png" alt="Foto" class="" />
+        </div>
+
+        <!-- Imagem -->
+        <div class="relative lg:flex justify-center lg:justify-end hidden">
+          <img
+            src="assets/dra.png"
+            alt="Foto"
+            class="rounded-md shadow-lg max-w-full"
+          />
+        </div>
       </div>
-  
-      <!-- Imagem Principal -->
-      <div class="relative lg:flex justify-center hidden">
-        <img src="assets/dra2.png" alt="Foto da Doutora" class="rounded-lg  max-w-full">
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section class="bg-purple-800 py-12">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center text-white"
+        >
+          <!-- Serviço 1 -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img
+                src="assets/alergia.svg"
+                class="w-16 h-16"
+                alt="Ícone de Alergia"
+              />
+            </div>
+            <h3 class="text-xl font-semibold">Alergias</h3>
+            <p class="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, adipiscing elit.
+            </p>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img
+                src="assets/imunologia.svg"
+                class="w-16 h-16"
+                alt="Ícone de Imunologia"
+              />
+            </div>
+            <h3 class="text-xl font-semibold">Imunologia</h3>
+            <p class="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, adipiscing elit.
+            </p>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div class="flex flex-col items-center">
+            <div class="mb-4">
+              <img
+                src="assets/pediatria.svg"
+                class="w-16 h-16"
+                alt="Ícone de Pediatria"
+              />
+            </div>
+            <h3 class="text-xl font-semibold">Pediatria</h3>
+            <p class="text-sm mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+              ipsum dolor sit amet, adipiscing elit.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  
-    <!-- Segunda Linha: Imagem com Texto -->
-    <div class="mt-12 px-4">
+    </section>
+
+    <section class="bg-[#FFD8E2] py-12">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
+      >
+        <!-- Texto -->
+        <div class="lg:hidden">
+          <img src="assets/estrela-roxa.png" class="mx-auto lg:hidden" alt="" />
+        </div>
+        <div class="text-[#7C3D9E] space-y-6">
+          <h2
+            class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#7C3D9E] lg:text-4xl text-center lg:text-left leading-snug"
+          >
+            ALERGISTA, <br />
+            IMUNOLOGISTA & <br />
+            PEDIATRA
+          </h2>
+          <div class="relative flex justify-center lg:hidden">
+            <img
+              src="assets/dra2.png"
+              alt="Foto da Doutora"
+              class="rounded-lg max-w-full"
+            />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <button
+            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded hover:bg-[#7C3D9E]"
+          >
+            SAIBA MAIS AQUI
+          </button>
+        </div>
+
+        <!-- Imagem Principal -->
+        <div class="relative lg:flex justify-center hidden">
+          <img
+            src="assets/dra2.png"
+            alt="Foto da Doutora"
+            class="rounded-lg max-w-full"
+          />
+        </div>
+      </div>
+
+      <!-- Segunda Linha: Imagem com Texto -->
+      <div class="mt-12 px-4">
         <div class="relative rounded-lg overflow-hidden">
           <!-- Imagem -->
-          <img src="assets/thumb.png" alt="Imagem da Doutora" class="mx-auto h-auto hidden lg:block">
-          <img src="assets/dra-mobile-thumb.png" alt="Imagem da Doutora" class="mx-auto h-auto lg:hidden">
-      
+          <img
+            src="assets/thumb.png"
+            alt="Imagem da Doutora"
+            class="mx-auto h-auto hidden lg:block"
+          />
+          <img
+            src="assets/dra-mobile-thumb.png"
+            alt="Imagem da Doutora"
+            class="mx-auto h-auto lg:hidden"
+          />
+
           <!-- Player (ícone central) -->
           <div class="absolute inset-0 flex items-center justify-center">
-            <button class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition">
+            <button
+              class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition"
+            >
               <!-- Ícone de play -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path d="M8 5v14l11-7z" />
               </svg>
             </button>
           </div>
         </div>
       </div>
-      
-  </section>
+    </section>
 
-  <section class="bg-[#A680DB] py-12">
-    <!-- Segunda seção de texto -->
-    <div class="relative w-full md:py-32 flex items-center justify-center mt-10 lg:mt-0" data-aos="fade-up">
-        <div class="lg:flex text-center items-center justify-between text-white px-4">
-            <h1 class="font-bold text-2xl md:text-2xl uppercase aventa lg:text-5xl mb-4 mx-auto max-w-xl">um pouco mais dos nossos cuidados.</h1>
-            <img src="assets/meiofrase.svg" alt="" class="hidden lg:block">
-            <h4 class="max-w-xl mx-auto  lg:text-xl aventa text-lg lg:pl-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed odio aliquam ultrices. Cras quis mollis elit, eget facilisis diam. Aliquam ullamcorper porta accumsan.</h4>
+    <section class="bg-[#A680DB] py-12">
+      <!-- Segunda seção de texto -->
+      <div
+        class="relative w-full md:py-32 flex items-center justify-center mt-10 lg:mt-0"
+        data-aos="fade-up"
+      >
+        <div
+          class="lg:flex text-center items-center justify-between text-white px-4"
+        >
+          <h1
+            class="font-bold text-2xl md:text-2xl uppercase aventa lg:text-5xl mb-4 mx-auto max-w-xl"
+          >
+            um pouco mais dos nossos cuidados.
+          </h1>
+          <img src="assets/meiofrase.svg" alt="" class="hidden lg:block" />
+          <h4 class="max-w-xl mx-auto lg:text-xl aventa text-lg lg:pl-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </h4>
         </div>
-    </div>
+      </div>
 
-    <!-- Carrossel -->
-    <div class="pb-32  overflow-x-hidden" data-aos="fade-up">
+      <!-- Carrossel -->
+      <div class="pb-32 overflow-x-hidden" data-aos="fade-up">
         <div class="carousel2">
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/vacina.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="text-lg md:text-2xl font-bold mt-4 text-white aventa">Aplicação de vacinas</h3>
-            </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/vacina.png" alt="" class="w-full mx-auto" />
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/testedealergia.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Teste de alergia</h3>
-            </div>
+            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white aventa">
+              Aplicação de vacinas
+            </h3>
+          </div>
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/consulta.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Consultas especializadas</h3>
-            </div>
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/vacina.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">Aplicação de vacinas</h3>
-            </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img
+              src="assets/testedealergia.png"
+              alt=""
+              class="w-full mx-auto"
+            />
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/testedealergia.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Teste de alergia</h3>
-            </div>
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Teste de alergia
+            </h3>
+          </div>
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/consulta.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Consultas especializadas</h3>
-            </div>
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/vacina.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">Aplicação de vacinas</h3>
-            </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/consulta.png" alt="" class="w-full mx-auto" />
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/testedealergia.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Teste de alergia</h3>
-            </div>
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Consultas especializadas
+            </h3>
+          </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/vacina.png" alt="" class="w-full mx-auto" />
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/consulta.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Consultas especializadas</h3>
-            </div>
-            
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/vacina.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">Aplicação de vacinas</h3>
-            </div>
+            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">
+              Aplicação de vacinas
+            </h3>
+          </div>
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/testedealergia.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Teste de alergia</h3>
-            </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img
+              src="assets/testedealergia.png"
+              alt=""
+              class="w-full mx-auto"
+            />
 
-            <div class="w-full md:w-1/3 p-3">
-                <img src="assets/consulta.png" alt="" class="w-full mx-auto">
-                
-                <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">Consultas especializadas</h3>
-            </div>
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Teste de alergia
+            </h3>
+          </div>
 
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/consulta.png" alt="" class="w-full mx-auto" />
+
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Consultas especializadas
+            </h3>
+          </div>
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/vacina.png" alt="" class="w-full mx-auto" />
+
+            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">
+              Aplicação de vacinas
+            </h3>
+          </div>
+
+          <div class="w-full md:w-1/3 p-3">
+            <img
+              src="assets/testedealergia.png"
+              alt=""
+              class="w-full mx-auto"
+            />
+
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Teste de alergia
+            </h3>
+          </div>
+
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/consulta.png" alt="" class="w-full mx-auto" />
+
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Consultas especializadas
+            </h3>
+          </div>
+
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/vacina.png" alt="" class="w-full mx-auto" />
+
+            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">
+              Aplicação de vacinas
+            </h3>
+          </div>
+
+          <div class="w-full md:w-1/3 p-3">
+            <img
+              src="assets/testedealergia.png"
+              alt=""
+              class="w-full mx-auto"
+            />
+
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Teste de alergia
+            </h3>
+          </div>
+
+          <div class="w-full md:w-1/3 p-3">
+            <img src="assets/consulta.png" alt="" class="w-full mx-auto" />
+
+            <h3 class="mt-4 text-white aventa text-lg md:text-2xl font-bold">
+              Consultas especializadas
+            </h3>
+          </div>
         </div>
-    </div>
-</section>
-  
-<section>
-    <div class="bg-[#383690] text-white py-4">
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-[#383690] text-white py-4">
         <div class="scrolling-wrapper">
           <div class="scrolling-text">
             <!-- Textos -->
-            <span class="text-xl aventa">Cuidar para transformar vidas desde o início.</span>
+            <span class="text-xl aventa"
+              >Cuidar para transformar vidas desde o início.</span
+            >
             <img src="assets/Union.svg" alt="Vector" />
-    
+
             <span class="text-xl aventa">Dra. Elisângela Menezes</span>
-    
+
             <!-- Imagem/Vetor -->
             <img src="assets/Union.svg" alt="Vector" />
-    
+
             <!-- Mais textos -->
-            <span class="text-xl aventa">Cuidar para transformar vidas desde o início.</span>
+            <span class="text-xl aventa"
+              >Cuidar para transformar vidas desde o início.</span
+            >
             <img src="assets/Union.svg" alt="Vector" />
-    
+
             <span class="text-xl aventa">Dra. Elisângela Menezes</span>
             <img src="assets/Union.svg" alt="Vector" />
-    
-    
+
             <!-- Repetição para continuidade -->
-            <span class="text-xl aventa">Cuidar para transformar vidas desde o início.</span>
+            <span class="text-xl aventa"
+              >Cuidar para transformar vidas desde o início.</span
+            >
             <img src="assets/Union.svg" alt="Vector" />
-    
+
             <span class="text-xl aventa">Dra. Elisângela Menezes</span>
             <img src="assets/Union.svg" alt="Vector" />
-            <span class="text-xl aventa">Cuidar para transformar vidas desde o início.</span>
+            <span class="text-xl aventa"
+              >Cuidar para transformar vidas desde o início.</span
+            >
             <img src="assets/Union.svg" alt="Vector" />
-    
+
             <span class="text-xl aventa">Dra. Elisângela Menezes</span>
           </div>
         </div>
       </div>
-</section>
+    </section>
 
-<section class="relative">
-    <div class="lg:flex container mx-auto items-center justify-between px-10 py-20 h-screen relative">
-      <!-- Conteúdo de texto -->
-      <div class="max-w-lg z-10">
-        <h1 class="text-4xl font-bold text-[#9251d2] leading-snug">
-          ESTAMOS <span class="italic font-normal">PRONTOS</span><br>
-          PARA ESPALHAR O <span class="italic font-normal">AMOR E O CUIDADO!</span>
-        </h1>
-        <p class="mt-6 text-lg text-[#6a347a]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae felis sed odio aliquam ultrices.
-          <span class="font-bold">Cras quis mollis elit</span>, eget facilisis diam. Aliquam ullamcorper porta accumsan.
+    <section class="relative bg-[#EFE1D4]">
+      <div
+        class="lg:flex container mx-auto items-center justify-between px-10 py-20 h-screen relative"
+      >
+        <!-- Conteúdo de texto -->
+        <div class="max-w-lg z-10">
+          <h1 class="text-4xl font-bold text-[#9251d2] leading-snug">
+            ESTAMOS <span class="italic font-normal">PRONTOS</span><br />
+            PARA ESPALHAR O
+            <span class="italic font-normal">AMOR E O CUIDADO!</span>
+          </h1>
+          <p class="mt-6 text-lg text-[#6a347a]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices.
+            <span class="font-bold">Cras quis mollis elit</span>, eget facilisis
+            diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-[#9251d2] text-white rounded-full text-lg"
+          >
+            Saiba Mais Aqui
+          </button>
+          <!-- Adicionando imagem da assinatura -->
+          <img
+            src="assets/assinatura.png"
+            alt="Assinatura da Dra. Elizângela Menezes"
+            class="mt-10 w-64"
+          />
+        </div>
+
+        <!-- Gráfico ou vetor à direita -->
+        <div class="relative lg:flex items-center w-full hidden">
+          <img
+            src="assets/flor.png"
+            alt="Figura Decorativa"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 lg:w-1/2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-purple-500 text-white py-10">
+      <div class="container mx-auto text-center">
+        <!-- Nome com ícone -->
+        <div class="lg:flex items-center justify-center gap-4">
+          <img
+            src="assets/logo-footer.png"
+            class="w-1/2 mx-auto lg:h-6 lg:w-auto"
+            alt=""
+          />
+        </div>
+
+        <!-- Descrição -->
+        <p class="mt-4 text-sm max-w-2xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus,
+          metus eget vulputate egestas, ligula leo porttitor sem, quis finibus
+          diam risus at mi.
         </p>
-        <button class="mt-6 px-6 py-3 bg-[#9251d2] text-white rounded-full text-lg">
-          Saiba Mais Aqui
-        </button>
-        <!-- Adicionando imagem da assinatura -->
-        <img src="assets/assinatura.png" alt="Assinatura da Dra. Elizângela Menezes" class="mt-10 w-64">
-      </div>
-  
-      <!-- Gráfico ou vetor à direita -->
-      <div class="relative lg:flex items-center w-full hidden ">
-        <img src="assets/flor.png" alt="Figura Decorativa" 
-             class="absolute right-[-23%] top-1/2 transform -translate-y-1/2">
-      </div>
-    </div>
-  </section>  
 
-  <footer class="bg-purple-500 text-white py-10">
-    <div class="container mx-auto text-center">
-      <!-- Nome com ícone -->
-      <div class="lg:flex items-center justify-center gap-4">
-        <img src="assets/logo-footer.png" class="w-1/2 mx-auto lg:hidden" alt="">
-        <img src="assets/logo-footer.png" alt="Ícone de Flor" class="h-6">
-      </div>
-  
-      <!-- Descrição -->
-      <p class="mt-4 text-sm max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus, metus eget vulputate egestas, ligula leo
-        porttitor sem, quis finibus diam risus at mi.
-      </p>
-  
-      <!-- Redes sociais -->
-      <div class="flex items-center justify-center gap-6 mt-6">
-        <a href="#" class="hover:opacity-80">
+        <!-- Redes sociais -->
+        <div class="flex items-center justify-center gap-6 mt-6">
+          <a href="#" class="hover:opacity-80">
             <i class="fab fa-instagram text-2xl"></i>
-        </a>
-        <a href="#" class="hover:opacity-80">
+          </a>
+          <a href="#" class="hover:opacity-80">
             <i class="fa-brands fa-square-facebook text-white text-2xl"></i>
-        </a>
-        <a href="#" class="hover:opacity-80">
+          </a>
+          <a href="#" class="hover:opacity-80">
             <i class="fa-brands fa-youtube text-white text-2xl"></i>
-        </a>
+          </a>
+        </div>
+
+        <!-- Linha horizontal -->
+        <hr class="mt-8 border-purple-300" />
+
+        <!-- Direitos autorais -->
+        <p class="mt-4 text-sm">&copy; 2024 BMouse Productions</p>
       </div>
-  
-      <!-- Linha horizontal -->
-      <hr class="mt-8 border-purple-300">
-  
-      <!-- Direitos autorais -->
-      <p class="mt-4 text-sm">&copy; 2024 BMouse Productions</p>
-    </div>
-  </footer>
-  
-  
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script>
-    $(document).ready(function(){
-        $('.carousel2').slick({
-            dots: false,
-            centerMode:true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4, 
-            cssEase: 'ease',
-            autoplay: true,
-            autoplaySpeed: 2000,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768, // Para dispositivos menores que 768px
-                    settings: {
-                        slidesToShow: 1, // Exibir 1 imagem no mobile
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
+    <script>
+      $(document).ready(function () {
+        $(".carousel2").slick({
+          dots: false,
+          centerMode: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 4,
+          cssEase: "ease",
+          autoplay: true,
+          autoplaySpeed: 2000,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 768, // Para dispositivos menores que 768px
+              settings: {
+                slidesToShow: 1, // Exibir 1 imagem no mobile
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
-    });
+      });
     </script>
-</body>
+  </body>
 </html>
