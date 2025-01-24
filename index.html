@@ -58,7 +58,7 @@
   </head>
   <body>
     <header class="relative bg-cover lg:bg-center h-screen" id="header">
-      <nav class="container mx-auto flex pt-24 justify-between h-full px-6">
+      <nav class="container mx-auto flex pt-12 justify-between h-full px-6">
         <div class="text-white text-2xl font-bold lg:block hidden">
           <a href="#">
             <img src="assets/logo.svg" alt="" />
@@ -105,25 +105,32 @@
         </div>
         <!-- Texto -->
         <div class="space-y-6 text-white lg:pl-12">
-          <h1 class="text-4xl font-bold text-center lg:text-left">
+          <div class="">
+            <img
+              src="assets/estrela-header.png"
+              class="hidden lg:block "
+              alt=""
+            />
+          </div>
+          <h1 class="lg:text-6xl text-5xl font-bold text-center lg:text-left">
             CUIDAR PARA <br />
-            <span class="italic aventa text-[#383690] lg:text-white"
+            <span class="italic aventa text-[#383690] font-bold"
               >TRANSFORMAR VIDAS </span
             >DESDE <br />
             <span class="text-gray-100">O INÍCIO.</span>
           </h1>
-          <p class="text-center lg:text-left">
+          <p class="text-center lg:text-left lg:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
             felis sed odio aliquam ultrices. Cras quis mollis elit, eget
             facilisis diam. Aliquam ullamcorper porta accumsan.
           </p>
-          <p class="text-center lg:text-left">
+          <p class="text-center lg:text-left lg:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
             felis sed odio aliquam ultrices. Cras quis mollis elit, eget
             facilisis diam. Aliquam ullamcorper porta accumsan.
           </p>
           <button
-            class="flex lg:block mx-auto lg:mx-0 rounded-full px-6 py-3 bg-purple-700 text-white font-semibold lg:rounded hover:bg-purple-800"
+            class="flex lg:block mx-auto lg:mx-0 rounded-full px-6 py-3 bg-purple-700 text-white font-semibold lg:rounded-full hover:bg-purple-800"
           >
             SAIBA MAIS AQUI
           </button>
@@ -145,7 +152,7 @@
     </section>
 
     <!-- Seção de Serviços -->
-    <section class="bg-purple-800 py-12">
+    <section class="bg-[#383690] py-12">
       <div class="container mx-auto px-4">
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center text-white"
@@ -201,7 +208,7 @@
       </div>
     </section>
 
-    <section class="bg-[#FFD8E2] py-12">
+    <section class="bg-[#EFE1D4] py-12 relative">
       <div
         class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
       >
@@ -209,14 +216,8 @@
         <div class="lg:hidden">
           <img src="assets/estrela-roxa.png" class="mx-auto lg:hidden" alt="" />
         </div>
-        <div class="text-[#7C3D9E] space-y-6">
-          <h2
-            class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#7C3D9E] lg:text-4xl text-center lg:text-left leading-snug"
-          >
-            ALERGISTA, <br />
-            IMUNOLOGISTA & <br />
-            PEDIATRA
-          </h2>
+        <div class="text-[#7C3D9E] space-y-6 max-w-lg mx-auto">
+          <img src="assets/texto-vector.png" alt="">
           <div class="relative flex justify-center lg:hidden">
             <img
               src="assets/dra2.png"
@@ -224,18 +225,23 @@
               class="rounded-lg max-w-full"
             />
           </div>
-          <p>
+          <p class="lg:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
             felis sed odio aliquam ultrices. Cras quis mollis elit, eget
             facilisis diam. Aliquam ullamcorper porta accumsan.
           </p>
-          <p>
+          <p class="lg:text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
+            facilisis diam. Aliquam ullamcorper porta accumsan.
+          </p>
+          <p class="lg:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
             felis sed odio aliquam ultrices. Cras quis mollis elit, eget
             facilisis diam. Aliquam ullamcorper porta accumsan.
           </p>
           <button
-            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded hover:bg-[#7C3D9E]"
+            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded-full hover:bg-[#7C3D9E]"
           >
             SAIBA MAIS AQUI
           </button>
@@ -255,21 +261,27 @@
       <div class="mt-12 px-4">
         <div class="relative rounded-lg overflow-hidden">
           <!-- Imagem -->
-          <img
-            src="assets/thumb.png"
-            alt="Imagem da Doutora"
-            class="mx-auto h-auto hidden lg:block"
-          />
-          <img
-            src="assets/dra-mobile-thumb.png"
-            alt="Imagem da Doutora"
-            class="mx-auto h-auto lg:hidden"
-          />
+           <div class="py-32 relative z-30">
+             <img
+               src="assets/thumb.png"
+               alt="Imagem da Doutora"
+               class="mx-auto h-auto hidden lg:block"
+             />
+
+           </div>
+           <div class="relative z-30">
+
+             <img
+               src="assets/dra-mobile-thumb.png"
+               alt="Imagem da Doutora"
+               class="mx-auto h-auto lg:hidden"
+             />
+           </div>
 
           <!-- Player (ícone central) -->
           <div class="absolute inset-0 flex items-center justify-center">
             <button
-              class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition"
+              class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition z-40"
             >
               <!-- Ícone de play -->
               <svg
@@ -284,9 +296,16 @@
           </div>
         </div>
       </div>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-5xl hidde lg:block">
+        <img
+          src="assets/dra-com-fundo.png"
+          alt="Imagem decorativa"
+          class="w-full object-contain pointer-events-none"
+        />
+      </div>
     </section>
 
-    <section class="bg-[#A680DB] py-12">
+    <section class="bg-[#A680DB] py-12 relative z-50">
       <!-- Segunda seção de texto -->
       <div
         class="relative w-full md:py-32 flex items-center justify-center mt-10 lg:mt-0"
@@ -468,34 +487,40 @@
       </div>
     </section>
 
-    <section class="relative bg-[#EFE1D4]">
+    <section class="relative bg-[#EFE1D4] pb-64 lg:pb-0">
       <div
         class="lg:flex container mx-auto items-center justify-between px-10 py-20 h-screen relative"
       >
         <!-- Conteúdo de texto -->
         <div class="max-w-lg z-10">
-          <h1 class="text-4xl font-bold text-[#9251d2] leading-snug">
-            ESTAMOS <span class="italic font-normal">PRONTOS</span><br />
+          <h1 class="text-5xl font-bold text-[#9251d2] leading-snug ">
+            ESTAMOS <span class="italic font-bold aventa text-[#383690]">PRONTOS</span><br />
             PARA ESPALHAR O
-            <span class="italic font-normal">AMOR E O CUIDADO!</span>
+            <span class="italic font-normal aventa text-[#383690]">AMOR E O CUIDADO!</span>
           </h1>
-          <p class="mt-6 text-lg text-[#6a347a]">
+          <p class="mt-6 text-xl text-[#6a347a]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
             felis sed odio aliquam ultrices.
             <span class="font-bold">Cras quis mollis elit</span>, eget facilisis
             diam. Aliquam ullamcorper porta accumsan.
           </p>
-          <button
-            class="mt-6 px-6 py-3 bg-[#9251d2] text-white rounded-full text-lg"
-          >
-            Saiba Mais Aqui
-          </button>
-          <!-- Adicionando imagem da assinatura -->
-          <img
-            src="assets/assinatura.png"
-            alt="Assinatura da Dra. Elizângela Menezes"
-            class="mt-10 w-64"
-          />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div class="flex justify-between">
+              <button
+                class="mt-6 px-6 py-3 bg-[#9251d2] text-white rounded-full text-lg"
+              >
+                Saiba Mais Aqui
+              </button>
+            </div>
+            <div class="flex justify-center">
+              <img
+                src="assets/assinatura.png"
+                alt="Assinatura da Dra. Elizângela Menezes"
+                class="mt-10 w-48 md:w-64"
+              />
+            </div>
+          </div>
+          
         </div>
 
         <!-- Gráfico ou vetor à direita -->
@@ -503,13 +528,20 @@
           <img
             src="assets/flor.png"
             alt="Figura Decorativa"
-            class="absolute right-0 top-1/2 transform -translate-y-1/2 lg:w-1/2"
+            class="absolute right-[-16%] top-1/2 transform -translate-y-1/2 lg:w-1/2 pointer-events-none"
           />
-        </div>
+        </div>        
+      </div>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-5xl lg:hidden">
+        <img
+          src="assets/dra-com-fundo.png"
+          alt="Imagem decorativa"
+          class="w-full object-contain pointer-events-none"
+        />
       </div>
     </section>
 
-    <footer class="bg-purple-500 text-white py-10">
+    <footer class="bg-purple-500 text-white py-10 relative z-30">
       <div class="container mx-auto text-center">
         <!-- Nome com ícone -->
         <div class="lg:flex items-center justify-center gap-4">

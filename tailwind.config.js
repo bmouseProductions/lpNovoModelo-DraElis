@@ -4,7 +4,11 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        fundoDra: "url('assets/dra-com-fundo.png')",
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities }) {

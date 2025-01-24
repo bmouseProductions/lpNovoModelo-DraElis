@@ -2,6 +2,18 @@
   font-family: "Aventa";
   src: url("./Font/aventa/Aventa-LightItallicPERSONALUSEONLY.otf");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 @font-face {
   font-family: "woman";
