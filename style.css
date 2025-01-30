@@ -37,3 +37,7 @@ body {
     background-image: url("assets/header-mobile.svg"); /* Imagem para mobile */
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
