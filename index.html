@@ -551,22 +551,20 @@
     </footer>
     
     <div id="video-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-      <div class="relative bg-white p-4 rounded-lg shadow-2xl w-full sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 max-w-4xl">
+      <div class="relative bg-white p-4 rounded-lg shadow-2xl w-full sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 max-w-lg">
         <!-- Botão de fechar -->
         <button onclick="closeVideoPopup()" class="absolute top-4 right-4 text-[#A680DB] text-3xl font-bold">
           &times;
         </button>
         <!-- Iframe do vídeo -->
-        <div class="aspect-square rounded-lg overflow-hidden">
+        <div class="relative w-full pb-[56.25%]">
           <iframe
             id="youtube-video"
-            width="100%"
-            height="100%"
             src="https://www.youtube.com/embed/JNmp9kBcu5w?si=1bsWt1IvqqvK3St7"
             frameborder="0"
             allow="autoplay; encrypted-media"
             allowfullscreen
-            class="rounded-lg"
+            class="absolute top-0 left-0 w-full h-full rounded-lg"
           ></iframe>
         </div>
       </div>
