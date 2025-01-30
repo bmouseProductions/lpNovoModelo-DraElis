@@ -69,7 +69,7 @@
           <a
             href="https://api.whatsapp.com/send?phone=5534999353532&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site,%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela"
             class="hover:text-gray-300 aventa border border-white rounded-full p-3"
-            >Contato</a
+            >Agendar consulta</a
           >
         </div>
 
@@ -244,9 +244,9 @@
         </div>
       </div>
 
-      <div class="mt-12 px-4">
+      <div class="px-4">
         <div class="relative rounded-lg overflow-hidden">
-           <div class="py-32 relative z-30">
+           <div class="py-12 relative z-30">
              <img
                src="assets/thumb.png"
                alt="Imagem da Doutora"
@@ -267,6 +267,7 @@
           <div class="absolute inset-0 flex items-center justify-center">
             <button
               class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition z-40"
+              onclick="openVideoPopup()"
             >
               <!-- Ícone de play -->
               <svg
@@ -371,7 +372,7 @@
           <div class="w-full md:w-1/3 p-3">
             <img src="assets/diagnostico.png" alt="" class="w-full mx-auto" />
 
-            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white">
+            <h3 class="text-lg md:text-2xl font-bold mt-4 text-white aventa">
               Diagnóstico preciso
             </h3>
           </div>
@@ -549,6 +550,29 @@
       </div>
     </footer>
     
+    <div id="video-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="relative bg-white p-4 rounded-lg shadow-2xl w-full sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 max-w-4xl">
+        <!-- Botão de fechar -->
+        <button onclick="closeVideoPopup()" class="absolute top-4 right-4 text-[#A680DB] text-3xl font-bold">
+          &times;
+        </button>
+        <!-- Iframe do vídeo -->
+        <div class="aspect-square rounded-lg overflow-hidden">
+          <iframe
+            id="youtube-video"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/JNmp9kBcu5w?si=1bsWt1IvqqvK3St7"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            class="rounded-lg"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -578,5 +602,19 @@
         });
       });
     </script>
+
+<script>
+  function openVideoPopup() {
+    // Exibir o pop-up
+    document.getElementById("video-popup").classList.remove("hidden");
+  }
+
+  function closeVideoPopup() {
+    // Esconder o pop-up
+    document.getElementById("video-popup").classList.add("hidden");
+    // Pausar o vídeo ao fechar
+    document.getElementById("youtube-video").src = "";
+  }
+</script>
   </body>
 </html>
