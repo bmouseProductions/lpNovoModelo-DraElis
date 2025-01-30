@@ -551,9 +551,9 @@
     </footer>
     
     <div id="video-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-      <div class="relative bg-white p-4 rounded-lg shadow-2xl w-full sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 max-w-lg">
+      <div class="relative bg-white p-10 rounded-lg shadow-2xl w-full sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 max-w-lg">
         <!-- Botão de fechar -->
-        <button onclick="closeVideoPopup()" class="absolute top-4 right-4 text-[#A680DB] text-3xl font-bold">
+        <button onclick="closeVideoPopup()" class="absolute top-0 right-4 text-[#A680DB] text-3xl font-bold">
           &times;
         </button>
         <!-- Iframe do vídeo -->
@@ -607,7 +607,11 @@
     document.getElementById("video-popup").classList.remove("hidden");
   }
 
-  function closeVideoPopup() {
+  function closeVideoPopup(event) {
+    // Se o clique for fora da caixa do vídeo (na área de fundo)
+    if (event) {
+      event.stopPropagation();
+    }
     // Esconder o pop-up
     document.getElementById("video-popup").classList.add("hidden");
     // Pausar o vídeo ao fechar
