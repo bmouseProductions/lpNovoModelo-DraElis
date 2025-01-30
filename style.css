@@ -34,8 +34,8 @@ body {
 
 @media (max-width: 768px) {
   #header {
-    background-image: url("assets/header-mobile.svg"); /* Imagem para mobile */
-    background-position: center -150px; /* Subir a imagem */
+    background-image: url("assets/header-mobile-1.webp"); /* Imagem para mobile */
+    background-size: 100% 100%;
   }
 }
 
