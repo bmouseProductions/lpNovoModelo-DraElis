@@ -35,6 +35,7 @@ body {
 @media (max-width: 768px) {
   #header {
     background-image: url("assets/header-mobile.svg"); /* Imagem para mobile */
+    background-position: center -150px; /* Subir a imagem */
   }
 }
 
