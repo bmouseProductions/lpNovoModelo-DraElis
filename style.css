@@ -29,7 +29,7 @@ body {
 }
 
 #header {
-  background-image: url("assets/novo-header.webp"); /* Imagem para desktop */
+  background-image: url("assets/draNovaImage.webp"); /* Imagem para desktop */
 }
 
 @media (max-width: 768px) {
