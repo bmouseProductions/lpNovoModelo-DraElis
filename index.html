@@ -96,6 +96,111 @@
       </nav>
     </header>
 
+    <section class="bg-[#EFE1D4] py-12 relative">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
+      >
+        <!-- Texto -->
+        <div class="lg:hidden">
+          <img src="assets/estrela-roxa.png" class="mx-auto lg:hidden" alt="" />
+        </div>
+        <div class="text-[#7C3D9E] space-y-6 mx-auto">
+          <h2
+            class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#7C3D9E] lg:text-5xl text-center lg:text-left leading-snug"
+          >
+            TRATAMENTO PERSONALIZADO COM VACINA SUBLINGUAL – 100% À DISTÂNCIA
+          </h2>
+          <div class="relative flex justify-center lg:hidden">
+            <img
+              src="assets/Imunoterapia_mobile.webp"
+              alt="Foto da Doutora"
+              class="rounded-lg max-w-full"
+            />
+          </div>
+          <p class="lg:text-xl">
+            Você sabia que é possível controlar as alergias de forma segura,
+            eficaz e sem sair de casa?
+          </p>
+          <p class="lg:text-xl">
+            O Programa Viva Sem Alergia é um tratamento completo, desenvolvido
+            pela Dra. Elisangela Menezes (CRMMG 44756), médica especialista em
+            pediatria, alergia e imunologia, com anos de experiência no cuidado
+            de crianças e adultos alérgicos.
+          </p>
+          <p class="lg:text-xl">
+            Chega de viver refém das crises. Com a imunoterapia sublingual
+            personalizada, seu corpo aprende a lidar melhor com os agentes
+            alérgenos — de forma inteligente e duradoura.
+          </p>
+          <button
+            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded-full hover:bg-[#7C3D9E]"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=5534999353532&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site,%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela"
+              target="_blank"
+            >
+              Agendar consulta
+            </a>
+          </button>
+        </div>
+
+        <!-- Imagem Principal -->
+        <div class="relative lg:flex justify-center hidden">
+          <img
+            src="assets/Imunoterapia.webp"
+            alt="Foto da Doutora"
+            class="rounded-lg max-w-full"
+          />
+        </div>
+      </div>
+
+      <div class="px-4">
+        <div class="relative rounded-lg overflow-hidden">
+          <div class="py-12 relative z-30">
+            <img
+              src="assets/thumb.png"
+              alt="Imagem da Doutora"
+              class="mx-auto h-auto hidden lg:block"
+            />
+          </div>
+          <div class="relative z-30">
+            <img
+              src="assets/dra-mobile-thumb.png"
+              alt="Imagem da Doutora"
+              class="mx-auto h-auto lg:hidden"
+            />
+          </div>
+
+          <!-- Player (ícone central) -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <button
+              class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition z-40"
+              onclick="openVideoPopup()"
+            >
+              <!-- Ícone de play -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-5xl hidde lg:block"
+      >
+        <img
+          src="assets/dra-com-fundo.png"
+          alt="Imagem decorativa"
+          class="w-full object-contain pointer-events-none"
+        />
+      </div>
+    </section>
+
     <section class="bg-[#A680DB] py-12">
       <div
         class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-6 px-4"
@@ -121,17 +226,22 @@
           </h1>
 
           <p class="text-center lg:text-left lg:text-xl">
-            Sou doutora Elisângela Menezes, formada em Pediatria pelo Hospital
-            das Clínicas da UFMG e registrada como especialista na área. Também
-            sou certificada pela Sociedade Brasileira de Alergia e Imunologia
-            para atender crianças e adultos, com especialização adicional em
-            Alergia e Imunologia Pediátrica reconhecida pela Sociedade
-            Brasileira de Pediatria.
+            Referência em Pediatria, Alergia e Imunologia, a Dra. Elisângela
+            Menezes possui uma trajetória acadêmica e profissional de
+            excelência. Bacharel em Medicina e em Ciências Biológicas -
+            Bioquímica e Imunologia pela UFMG. Pediatra com residência médica
+            pelo Hospital das Clínicas da UFMG, especializou-se em Alergia e
+            Imunologia Clínica pela Faculdade de Ciências Médicas e da Saúde de
+            Juiz de Fora - MG. Membro titular da Sociedade Brasileira de Alergia
+            e Imunologia, mantém-se sempre atualizada nas melhores práticas da
+            área, e possui mais de 20 anos de experiência no ensino em Medicina
+            e saúde.
           </p>
           <p class="text-center lg:text-left lg:text-xl">
-            Meu compromisso é oferecer um cuidado completo, baseado na ciência e
-            na empatia, priorizando a saúde e o bem-estar dos meus pacientes em
-            todas as fases da vida.
+            Seu compromisso é oferecer um atendimento humanizado, com
+            diagnósticos precisos e tratamentos eficazes para crianças e adultos
+            na área de alergia, priorizando a qualidade de vida de seus
+            pacientes.
           </p>
           <button
             class="flex lg:block mx-auto lg:mx-0 rounded-full px-6 py-3 bg-purple-700 text-white font-semibold lg:rounded-full hover:bg-purple-800"
@@ -216,113 +326,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="bg-[#EFE1D4] py-12 relative">
-      <div
-        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
-      >
-        <!-- Texto -->
-        <div class="lg:hidden">
-          <img src="assets/estrela-roxa.png" class="mx-auto lg:hidden" alt="" />
-        </div>
-        <div class="text-[#7C3D9E] space-y-6 max-w-lg mx-auto">
-          <h2
-            class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#7C3D9E] lg:text-6xl text-center lg:text-left leading-snug"
-          >
-            CUIDAR PARA TRANSFORMAR <br />
-            DESDE O VIDAS <br />
-            INÍCIO.
-          </h2>
-          <div class="relative flex justify-center lg:hidden">
-            <img
-              src="assets/foto-nova-dra.png"
-              alt="Foto da Doutora"
-              class="rounded-lg max-w-full"
-            />
-          </div>
-          <p class="lg:text-xl">
-            Minha visão sobre saúde vai muito além do tratamento de doenças.
-            Trabalho de forma preventiva, oferecendo um cuidado integral e
-            humanizado.
-          </p>
-          <p class="lg:text-xl">
-            Meu objetivo é ajudar meus pacientes a desenvolverem hábitos
-            saudáveis, e reverterem condições adversas, promovendo seu bem-estar
-            físico, mental e social.
-          </p>
-          <!-- <p class="lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
-            felis sed odio aliquam ultrices. Cras quis mollis elit, eget
-            facilisis diam. Aliquam ullamcorper porta accumsan.
-          </p> -->
-          <button
-            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded-full hover:bg-[#7C3D9E]"
-          >
-            <a
-              href="https://api.whatsapp.com/send?phone=5534999353532&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site,%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela"
-              target="_blank"
-            >
-              Agendar consulta
-            </a>
-          </button>
-        </div>
-
-        <!-- Imagem Principal -->
-        <div class="relative lg:flex justify-center hidden">
-          <img
-            src="assets/foto-nova-dra.png"
-            alt="Foto da Doutora"
-            class="rounded-lg max-w-full"
-          />
-        </div>
-      </div>
-
-      <div class="px-4">
-        <div class="relative rounded-lg overflow-hidden">
-          <div class="py-12 relative z-30">
-            <img
-              src="assets/thumb.png"
-              alt="Imagem da Doutora"
-              class="mx-auto h-auto hidden lg:block"
-            />
-          </div>
-          <div class="relative z-30">
-            <img
-              src="assets/dra-mobile-thumb.png"
-              alt="Imagem da Doutora"
-              class="mx-auto h-auto lg:hidden"
-            />
-          </div>
-
-          <!-- Player (ícone central) -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <button
-              class="bg-white text-[#A680DB] p-4 rounded-full shadow-lg hover:bg-[#A680DB] hover:text-white transition z-40"
-              onclick="openVideoPopup()"
-            >
-              <!-- Ícone de play -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-5xl hidde lg:block"
-      >
-        <img
-          src="assets/dra-com-fundo.png"
-          alt="Imagem decorativa"
-          class="w-full object-contain pointer-events-none"
-        />
       </div>
     </section>
 
@@ -472,6 +475,147 @@
       </div>
     </section>
 
+    <section class="bg-[#A680DB] py-12 relative px-4 text-white">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl aventa font-bold mb-8">
+          O QUE ESTÁ INCLUÍDO NO<br />PROGRAMA VIVA SEM ALERGIA:
+        </h2>
+
+        <div
+          class="grid md:grid-cols-2 aventa gap-6 text-left text-base md:text-lg font-medium"
+        >
+          <div>
+            <p class="mb-4">
+              ✅ <strong>Tratamento com Vacina Sublingual Personalizada:</strong
+              ><br />Um ato de imunoterapia formulado de acordo com o seu perfil
+              alérgico, com doses entregues diretamente na sua casa.
+            </p>
+            <p class="mb-4">
+              ✅ <strong>Consultas Médicas de Acompanhamento:</strong
+              ><br />Quatro consultas ao longo do ano (online ou presenciais),
+              para avaliar a evolução do tratamento, fazer ajustes e garantir
+              segurança em cada etapa.
+            </p>
+            <p class="mb-4">
+              ✅ <strong>Orientações para Controle do Ambiente:</strong
+              ><br />Dicas práticas para adaptar sua casa, quarto e rotina,
+              reduzindo a exposição a gatilhos alérgicos que agravam os
+              sintomas.
+            </p>
+            <p class="mb-4">
+              ✅ <strong>Plano de Ação Individualizado:</strong
+              ><br />Estratégias específicas para o seu caso: o que evitar, o
+              que mudar e como lidar com as crises quando elas surgirem.
+            </p>
+          </div>
+
+          <div>
+            <p class="mb-4">
+              ✅ <strong>Material Educativo Exclusivo:</strong><br />E-books e
+              guias digitais explicando tudo sobre alergia, imunoterapia e como
+              fortalecer sua imunidade de forma natural e contínua.
+            </p>
+            <p class="mb-4">
+              ✅ <strong>Suporte Remoto em Situações Críticas:</strong
+              ><br />Atendimento à distância em momentos de crise: oferecemos
+              segurança, orientação rápida e tranquilidade para você e sua
+              família.
+            </p>
+            <p class="mb-4">
+              ✅ <strong>Entrega em Qualquer Lugar do Brasil:</strong><br />A
+              vacina é enviada para a sua casa com todo o cuidado e segurança,
+              permitindo que o tratamento continue mesmo à distância.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16">
+          <h3
+            class="text-xl md:text-4xl aventa font-semibold uppercase tracking-wide"
+          >
+            Investimento em liberdade,<br />saúde e bem-estar
+          </h3>
+          <div class="bg-[#383690] py-16 max-w-2xl mx-auto my-10">
+            <p class="text-5xl font-bold text-white mt-4 aventa">R$ 8.200,00</p>
+            <p class="text-lg mt-2 aventa">12x (valor anual)</p>
+            <p class="mt-2 text-white aventa">
+              Para pagamento à vista, o valor reduz para
+              <span class="font-semibold text-white aventa">R$ 7.500,00</span>.
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="mt-10 max-w-2xl mx-auto text-left text-base aventa md:text-lg text-white"
+        >
+          Você não precisa mais conviver com crises constantes. Com o
+          acompanhamento certo, é possível viver com mais leveza, segurança e
+          liberdade.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-[#EFE1D4] py-12 relative">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
+      >
+        <!-- Texto -->
+        <div class="text-[#383690] space-y-6 mx-auto">
+          <img src="assets/estrela-roxa.png" class="mx-auto lg:mx-0" alt="" />
+
+          <h2
+            class="text-3xl aventa text-[#A680DB] font-bold lg:text-[#A680DB] lg:text-7xl text-center lg:text-left leading-snug"
+          >
+            Para <br />
+            quem é este <br />
+            programa?
+          </h2>
+          <div class="relative flex justify-center lg:hidden">
+            <img
+              src="assets/bebe.png"
+              alt="Foto da Doutora"
+              class="rounded-lg max-w-full"
+            />
+          </div>
+          <p class="lg:text-xl">
+            Pessoas que convivem com rinites, bronquites, sinusites, dermatites
+            e outras reações alérgicas recorrentes.
+          </p>
+          <p class="lg:text-xl">
+            Pais que desejam um tratamento seguro e confortável para seus
+            filhos.
+          </p>
+          <p class="lg:text-xl">
+            Quem procura uma alternativa moderna e eficaz aos tratamentos
+            tradicionais, sem depender de remédios contínuos.
+          </p>
+          <p class="lg:text-xl">
+            Qualquer pessoa que queira mais liberdade, menos crises e mais
+            qualidade de vida.
+          </p>
+          <button
+            class="flex mx-auto lg:mx-0 lg:block rounded-full px-6 py-3 bg-[#A680DB] text-white font-semibold lg:rounded-full hover:bg-[#7C3D9E]"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=5534999353532&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site,%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela"
+              target="_blank"
+            >
+              Saiba mais aqui
+            </a>
+          </button>
+        </div>
+
+        <!-- Imagem Principal -->
+        <div class="relative lg:flex justify-center hidden">
+          <img
+            src="assets/bebe.png"
+            alt="Foto da Doutora"
+            class="rounded-lg max-w-full"
+          />
+        </div>
+      </div>
+    </section>
+
     <section class="relative bg-[#EFE1D4] pb-32 lg:pb-0">
       <div
         class="lg:flex container mx-auto items-center justify-between px-10 py-20 lg:h-screen relative"
@@ -479,19 +623,16 @@
         <!-- Conteúdo de texto -->
         <div class="max-w-lg z-10">
           <h1 class="text-5xl font-bold text-[#9251d2] leading-snug">
-            ESTAMOS
-            <span class="italic font-bold aventa text-[#383690]">PRONTOS</span
-            ><br />
-            PARA ESPALHAR O
-            <span class="italic font-normal aventa text-[#383690]"
-              >AMOR E O CUIDADO!</span
-            >
+            COMECE
+            <span class="italic font-bold aventa text-[#383690]">HOJE</span>
+            MESMO
           </h1>
           <p class="mt-6 text-xl text-[#6a347a]">
-            Aqui, cada paciente é único e recebe o cuidado que merece. Estamos
-            prontos para oferecer atenção especializada e tratamentos
-            personalizados, porque acreditamos que cuidar é uma forma de
-            espalhar amor.
+            Fale com a equipe da Dra. Elisangela Menezes e dê o primeiro passo
+            para viver sem alergia.
+          </p>
+          <p class="mt-6 text-xl text-[#6a347a]">
+            Atendimento para todo o Brasil | 100% online e seguro.
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div class="flex justify-between">
